@@ -27,7 +27,7 @@
                             out.print("<td>" + n.getAutor() + "</p>" );
 
                             out.print("<td>");
-                                String linkExcluir = "acao/del_livro.jsp?id="+n.getId();
+                                String linkExcluir = "action/del_livro.jsp?id="+n.getId();
                                 out.println("<a href=\""+linkExcluir+"\">excluir</a>" );
                             out.print("</td>");
                         out.print("</tr>");
