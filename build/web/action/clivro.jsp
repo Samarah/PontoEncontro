@@ -10,7 +10,7 @@ String nomePaginas = request.getParameter("paginas");
 String nomeSinopse = request.getParameter("sinopse");
 
 
-String sql = "insert into livros (titulo, genero) "
+String sql = "insert into livros (titulo, genero, editora, edicao, ano, autor, nPaginas, sinopse) "
         + "values ("
             + "\""+nomeLivro+"\", "
             + "\""+nomeGenero+"\", "
@@ -20,17 +20,17 @@ String sql = "insert into livros (titulo, genero) "
             + "\""+nomeAutor+"\", "
             + "\""+nomePaginas+"\","
             + "\""+nomeSinopse+"\" "
-            
-            
+                 
         + ")";
-MySQL m = new MySQL();
+ MySQL m = new MySQL();
 
-if(m.executaInsert(sql)){
-    out.print("Nome - "+nomeLivro);
-    out.print("<br />");
-    out.print("Genero - "+request.getParameter("genero"));
-} else {
-    out.print("errado<br />");
-    out.print(sql);
-}
+    if (m.executaInsert(sql)) {
+        
+        response.sendRedirect("../sucesso.jsp");
+        
+        
+    } else {
+        out.print("errado<br />");
+        out.print(sql);
+    }
 %>

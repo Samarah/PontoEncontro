@@ -155,6 +155,11 @@ rgba(0, 0, 0, 0.05);
 outline: 0;
 }
 
+.balao{
+    margin-left: 130px;
+    
+}
+
 
 </style>
 

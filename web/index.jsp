@@ -10,7 +10,7 @@
 	
 	 <!-- bloco header -->
 
-         <jsp:include page="includes/topo.jsp"/>
+         <jsp:include page="includes/topo_admin.jsp"/>
          
          
 	  <!-- Notícias -->

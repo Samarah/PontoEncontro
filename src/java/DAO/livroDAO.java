@@ -28,6 +28,15 @@ public class livroDAO {
             livro n = new livro();
             n.setTitulo(linha.getString("titulo"));
             n.setImg(linha.getString("imagem"));
+            n.setAutor(linha.getString("autor"));
+            n.setEditora(linha.getString("editora"));
+            n.setEdicao(linha.getInt("edicao"));
+            n.setGenero(linha.getString("genero"));
+            n.setSinopse(linha.getString("sinopse"));
+            n.setAno(linha.getString("data"));
+            n.setId(linha.getString("id"));
+            n.setnPaginas(linha.getInt("nPaginas"));
+            
             
             lista.add(n);
         }

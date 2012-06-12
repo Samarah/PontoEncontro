@@ -22,6 +22,7 @@
                                 <li><a href="clivro.jsp">C.Livro</a></li>
                                 <li><a href="ccomprar.jsp">C.Comprar</a></li>
                                 <li><a href="cdownload.jsp">C.Download</a></li>
+                                <li><a href="list_livros.jsp">ListaLivros</a></li>
                             </ul>
                         </div>
 

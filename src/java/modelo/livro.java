@@ -7,6 +7,7 @@ package modelo;
 
 public class livro {
     
+    protected String id;
     protected String titulo;
     protected String img;
     protected String link;
@@ -16,6 +17,7 @@ public class livro {
     protected String sinopse;
     protected int edicao;
     protected String genero;
+    protected int nPaginas;
     
     public livro () {
         
@@ -27,16 +29,18 @@ public class livro {
         this.link = link;
     }
     
-    public livro(String titulo, String img,String link , String autor, String editora, String ano, String sinopse, int edicao, String genero) {
+    public livro(String id,String titulo, String img, int nPaginas, String autor, String editora, String ano, String sinopse, int edicao, String genero, String Link) {
+        this.id = id;
         this.titulo = titulo;
         this.img = img;
-        this.link = link;
+        this.nPaginas = nPaginas;
         this.autor = autor;
         this.editora = editora;
         this.ano = ano;
         this.sinopse = sinopse;
         this.edicao = edicao;
         this.genero = genero;
+        this.link = link;
     }
 
     public String getAno() {
@@ -87,13 +91,7 @@ public class livro {
         this.img = img;
     }
 
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
+    
 
     public String getSinopse() {
         return sinopse;
@@ -110,6 +108,32 @@ public class livro {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public int getnPaginas() {
+        return nPaginas;
+    }
+
+    public void setnPaginas(int nPaginas) {
+        this.nPaginas = nPaginas;
+    }
+    
+    
     
     
     
