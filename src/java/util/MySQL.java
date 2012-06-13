@@ -20,10 +20,10 @@ import java.sql.SQLException;
  */
 public class MySQL {
     
-  Statement statement;    
+    Statement statement;    
     String user = "root";
     String pass = "vertrigo";
-    String database = "PE";
+    String database = "cadastro";
     String host = "localhost";
    
     public MySQL()
@@ -36,8 +36,9 @@ public class MySQL {
             statement = (Statement) conn.createStatement();
         } catch (ClassNotFoundException e){
             System.out.println("Driver MySQL não encontrado.");
+            System.exit(0);
         } catch (SQLException e){
-            System.out.println("Erro na conexão com a base de dados: "+e);
+            System.out.println("Erro na conex�o com a base de dados: "+e);
         }        
     }
 
@@ -69,7 +70,7 @@ public class MySQL {
             statement.execute(delete);
             return true;
         } catch (SQLException e){
-            System.out.println("Erro na exclusão "+e);
+            System.out.println("Erro na exclus�o "+e);
             return false;
         }
     }
@@ -88,5 +89,3 @@ public class MySQL {
     }       
     
 }
-    
-

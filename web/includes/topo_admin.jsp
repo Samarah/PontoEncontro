@@ -22,6 +22,7 @@
                                 <li><a href="clivro.jsp">C.Livro</a></li>
                                 <li><a href="ccomprar.jsp">C.Comprar</a></li>
                                 <li><a href="cdownload.jsp">C.Download</a></li>
+                                <li><a href="cpessoas.jsp">C.Pessoas</a></li>
                                 <li><a href="list_livros.jsp">ListaLivros</a></li>
                             </ul>
                         </div>
@@ -29,9 +30,9 @@
                     <div class="btn-group botoes-usuario">
                             <a href="admin.jsp" class="btn btn-pink">Inicio</a>
                             <a href="biblioteca.jsp" class="btn btn-pink">Biblioteca</a>
-                            <a href="#" class="btn btn-pink">Comprar</a>
-                            <a href="#" class="btn btn-pink">Download</a>
-                           <a href="#" class="btn btn-pink">Contato</a>
+                            <a href="comprar.jsp" class="btn btn-pink">Comprar</a>
+                            <a href="download.jsp" class="btn btn-pink">Download</a>
+                           <a href="contato.jsp" class="btn btn-pink">Contato</a>
                     </div> 
 
 

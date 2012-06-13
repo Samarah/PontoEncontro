@@ -28,7 +28,13 @@
                 </div>
             </div>
 
-          
+          <div class="control-group">
+                <label class="control-label" for="input01">Sobrenome</label>
+                <div class="controls">
+                <input type="text" class="input-xlarge" id="input01" name="nome">
+                </div>
+            </div>
+
 
             <div class="control-group">
                 <label class="control-label" for="input01">Data de nascimento</label>
@@ -69,7 +75,7 @@
 
             <div class="control-group">
             <label class="control-label" for="inlineChecbox1">Sexo</label>
-            <div class="controls">
+            <div style="margin-left: 330px;margin-top: 22px;" class="controls">
                 <label class="checkbox inline">
                     <input type="checkbox" id="inlineChecbox1" value="F" name="genero" />
                     F
@@ -105,7 +111,7 @@
             </div>
 
 
-            <div class="form-actions">
+            <div style="margin-top: 40px;" class="form-actions">
                 <input type="submit" class="btn btn-pink" value="Salvar" />
                 <button class="btn btn-pink">Cancelar</button>
             </div>

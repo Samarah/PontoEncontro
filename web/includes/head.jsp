@@ -162,6 +162,14 @@ outline: 0;
     
 }
 
+.help-block {
+margin-left: 250px;
+}
+
+.form-horizontal .help-block {
+margin-top: 9px;
+margin-bottom: -13px;
+}
 
 </style>
 
