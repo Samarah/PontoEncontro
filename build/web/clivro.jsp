@@ -10,12 +10,12 @@
 	
 	 <!-- bloco header -->
 
-         <jsp:include page="includes/topo_admin.jsp"/>
+         <jsp:include page="includes/topo.jsp"/>
          
          
 	  <!-- Formulario de livros -->
 
-          <div class="for-livro">
+          <div class="for-blocofundo">
           
         <form class="form-horizontal" action="action/clivro.jsp" method="POST">
         <fieldset>

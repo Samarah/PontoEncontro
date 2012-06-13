@@ -157,6 +157,11 @@ outline: 0;
     margin-left: 100px;
 }
 
+.balao{
+    margin-left: 130px;
+    
+}
+
 
 </style>
 
