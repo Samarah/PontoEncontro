@@ -16,6 +16,7 @@ public class livro {
     protected String sinopse;
     protected int edicao;
     protected String genero;
+    protected String npaginas;
     
     public livro () {
         

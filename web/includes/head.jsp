@@ -88,7 +88,6 @@ padding-top: -40px;
 padding-left: 100px;
 }
 
-
 .form-search1 {
 position:absolute;
 padding-top: 90px;
@@ -153,6 +152,9 @@ rgba(0, 0, 0, 0.05);
 }
 .btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
 outline: 0;
+}
+.balao{
+    margin-left: 100px;
 }
 
 
