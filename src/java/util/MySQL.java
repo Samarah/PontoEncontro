@@ -4,14 +4,10 @@
  */
 package util;
 
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.Statement;
 import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 
 /**
@@ -23,7 +19,7 @@ public class MySQL {
     Statement statement;    
     String user = "root";
     String pass = "vertrigo";
-    String database = "cadastro";
+    String database = "PE";
     String host = "localhost";
    
     public MySQL()

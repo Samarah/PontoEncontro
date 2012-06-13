@@ -4,7 +4,6 @@
  */
 package DAO;
 
-import com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion.Static;
 import java.util.ArrayList;
 import modelo.livro;
 import util.ConjuntoResultados;
@@ -33,7 +32,7 @@ public class livroDAO {
             n.setEdicao(linha.getInt("edicao"));
             n.setGenero(linha.getString("genero"));
             n.setSinopse(linha.getString("sinopse"));
-            n.setAno(linha.getString("data"));
+            n.setAno(linha.getString("ano"));
             n.setId(linha.getString("id"));
             n.setnPaginas(linha.getInt("nPaginas"));
             
@@ -62,7 +61,7 @@ public class livroDAO {
             n.setEdicao(linha.getInt("edicao"));
             n.setGenero(linha.getString("genero"));
             n.setSinopse(linha.getString("sinopse"));
-            n.setAno(linha.getString("data"));
+            n.setAno(linha.getString("ano"));
             n.setId(linha.getString("id"));
             n.setnPaginas(linha.getInt("nPaginas"));
             //E retorna o objeto com os valores corretos
