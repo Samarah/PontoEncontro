@@ -48,7 +48,7 @@
           <div class="span4">
               
               <div class="form-search">
-                  <form action="busca.jsp" method="POST" class="form-search">
+                  <form style="margin-left: 55px;" class="form-search" action="busca.jsp" method="POST">
                     <span class="form-search2">
                         <input type="text" name="texto_busca" style="height:30px;" class="input-medium search-query">
                     </span>
