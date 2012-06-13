@@ -59,7 +59,7 @@
           <div class="control-group">
             <label class="control-label" for="input01">Número de Páginas</label>
             <div class="controls">
-              <input type="text" class="input-xlarge" id="input01" name="paginas">
+              <input type="text" class="input-xlarge" id="input01" name="nPaginas">
             </div>
           </div>
           

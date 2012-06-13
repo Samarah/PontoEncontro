@@ -72,4 +72,35 @@ public class livroDAO {
         }
     }
     
+    
+        public static ArrayList<livro> busca(String texto){
+
+        ArrayList<livro> lista = new ArrayList<livro>();
+        MySQL bancoDados = new MySQL();
+        String sql = "select * from livros";
+                sql += " where ";
+                sql += "titulo like \"%"+texto+"%\" ";
+                    sql += "or sinopse like \"%"+texto+"%\" ";                    
+        ConjuntoResultados linhas = bancoDados.executaSelect(sql);
+        
+        while(linhas.next()){
+            livro n = new livro();
+            n.setId( linhas.getString("id") );
+            n.setTitulo( linhas.getString("titulo") );
+            n.setSinopse( linhas.getString("sinopse") );
+            n.setAutor(linhas.getString("autor"));
+            n.setEditora(linhas.getString("editora"));
+            n.setEdicao(linhas.getInt("edicao"));
+            n.setAno(linhas.getString("ano"));
+            n.setGenero(linhas.getString("genero"));
+            n.setnPaginas(linhas.getInt("nPaginas"));
+            n.setImg(linhas.getString("imagem"));
+            
+            
+            lista.add( n );
+        }
+
+        return lista;
+    }
+   
 }

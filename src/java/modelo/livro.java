@@ -128,7 +128,7 @@ public class livro {
     }
 
     public void setnPaginas(int nPaginas) {
-        this.npaginas = npaginas;
+        this.npaginas = nPaginas;
     }
    
     public String getLinkToPage(){

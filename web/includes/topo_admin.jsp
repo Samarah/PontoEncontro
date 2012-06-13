@@ -48,13 +48,15 @@
           <div class="span4">
               
               <div class="form-search">
-                <form class="form-search">
+                  <form action="busca.jsp" method="POST" class="form-search">
                     <span class="form-search2">
-                        <input type="text" style="height:30px;" class="input-medium search-query">
+                        <input type="text" name="texto_busca" style="height:30px;" class="input-medium search-query">
                     </span>
                     <button type="submit" class="btn btn-pink">Buscar</button>
                 </form>
               </div>
           </div>
     </div>
-	  
+
+	 
+      
