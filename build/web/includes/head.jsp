@@ -48,6 +48,13 @@ padding-bottom: 20px;
 margin-top: 15px;
 }
 
+.noticia1 {
+margin-bottom: 20px;
+border-bottom: 1px dashed #ddd;
+padding-bottom: 20px;
+
+}
+
 .noticia a {
 color: red;
 }
@@ -171,6 +178,23 @@ margin-top: 9px;
 margin-bottom: -13px;
 }
 
+.cabecario{
+    font-family:monospace , sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.cabecario p{
+text-align: left;
+margin:0 px;
+line-height: 20px;
+margin-left: -20px;
+}
+
+.detalhe{
+    margin-top: 30px;
+}
 </style>
 
 

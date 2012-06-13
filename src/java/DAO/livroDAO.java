@@ -44,4 +44,33 @@ public class livroDAO {
 
 
     }
+    
+    public static livro pegaLivroPeloId(String id){
+        MySQL bancoDados = new MySQL();
+        String sql = "select * from livros where id = "+id;
+        ConjuntoResultados linha = bancoDados.executaSelect(sql);
+
+        //Se tiver pelo menos uma linha, encontrou a novidade que buscamos
+        if(linha.next()){
+            //então, cria objeto para o livro
+            livro n = new livro();
+            //Preenche os valores dos atributos deste livro
+            n.setTitulo(linha.getString("titulo"));
+            n.setImg(linha.getString("imagem"));
+            n.setAutor(linha.getString("autor"));
+            n.setEditora(linha.getString("editora"));
+            n.setEdicao(linha.getInt("edicao"));
+            n.setGenero(linha.getString("genero"));
+            n.setSinopse(linha.getString("sinopse"));
+            n.setAno(linha.getString("data"));
+            n.setId(linha.getString("id"));
+            n.setnPaginas(linha.getInt("nPaginas"));
+            //E retorna o objeto com os valores corretos
+            return n;
+        } else {
+            //se não encontrou nada, retorna null
+            return null;
+        }
+    }
+    
 }

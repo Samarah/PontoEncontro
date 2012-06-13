@@ -17,7 +17,7 @@ public class livro {
     protected String sinopse;
     protected int edicao;
     protected String genero;
-    protected String npaginas;
+    protected int npaginas;
 
     public livro () {
         
@@ -123,7 +123,7 @@ public class livro {
         this.link = link;
     }
 
-    public String getnPaginas() {
+    public int getnPaginas() {
         return npaginas;
     }
 
@@ -131,5 +131,20 @@ public class livro {
         this.npaginas = npaginas;
     }
    
+    public String getLinkToPage(){
+        return "vlivro.jsp?id="+this.id;
+    }
+
+                public String getHTMLBlock(){
+                    
+                String s = "";
+                s+="<div class=\"noticia span4\">";
+                s+="<img class=\"thumbnail\" src=\"imagem/"+this.getImg()+"\" ></img>";
+                s+="<p><b>" + this.getTitulo() + "</b></p>";
+                s += "<a href=\""+this.getLinkToPage()+"\">veja mais.</a>";
+                s+="</div>";
+                return s;
+}
+    
     }
 

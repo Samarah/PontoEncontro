@@ -9,7 +9,7 @@
 		out.print("<div class=\"noticia span4\">");
                 out.print("<img class=\"thumbnail\" src=\"imagem/"+n.getImg()+"\" ></img>");
                 out.print("<p><b>" + n.getTitulo() + "</b></p>");
-                out.print("<a href=\"#\">Mais Informaçoes</a>");
+                out.print("<a href=\""+n.getLinkToPage()+"\">veja mais</a>");
                 out.print("</div>");
                }
         %>
