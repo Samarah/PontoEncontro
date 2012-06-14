@@ -1,10 +1,8 @@
- <div class="row">
-      
-         <div class="span6 sem-margem">
-		  <img src="imagem/original.png" class="logomarca"  />
-		</div>
-              
-	  </div>
+<div class="row">
+    <div class="span6 sem-margem">
+        <img src="imagem/original.png" class="logomarca"  />
+    </div>
+</div>
 
       <div class="row">
       
