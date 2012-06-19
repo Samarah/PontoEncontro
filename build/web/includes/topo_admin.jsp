@@ -1,10 +1,8 @@
- <div class="row">
-      
-         <div class="span6 sem-margem">
-		  <img src="imagem/original.png" class="logomarca"  />
-		</div>
-              
-	  </div>
+<div class="row">
+    <div class="span6 sem-margem">
+        <img src="imagem/original.png" class="logomarca"  />
+    </div>
+</div>
 
       <div class="row">
       
@@ -48,13 +46,15 @@
           <div class="span4">
               
               <div class="form-search">
-                <form class="form-search">
+                  <form style="margin-left: 55px;" class="form-search" action="busca.jsp" method="POST">
                     <span class="form-search2">
-                        <input type="text" style="height:30px;" class="input-medium search-query">
+                        <input type="text" name="texto_busca" style="height:30px;" class="input-medium search-query">
                     </span>
                     <button type="submit" class="btn btn-pink">Buscar</button>
                 </form>
               </div>
           </div>
     </div>
-	  
+
+	 
+      

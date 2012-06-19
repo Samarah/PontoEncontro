@@ -1,6 +1,7 @@
 <%@page import="util.MySQL"%>
 <%
     String pNome = request.getParameter("nome");
+    String pSobrenome = request.getParameter("sobrenome");
     String pAniversario = request.getParameter("aniversario");
     String pPais = request.getParameter("pais");
     String pEstado = request.getParameter("estado");
@@ -12,9 +13,10 @@
     String pSenha = request.getParameter("senha");
 
 
-    String sql = "insert into usuario (nome, aniversario, pais, estado, cidade, profissao, genero, relacao, email, senha) "
+    String sql = "insert into usuario (nome, sobrenome, aniversario, pais, estado, cidade, profissao, genero, relacao, email, senha) "
             + "values ("
             + "\"" + pNome + "\", "
+            + "\"" + pSobrenome + "\", "
             + "\"" + pAniversario + "\", "
             + "\"" + pPais + "\", "
             + "\"" + pEstado + "\", "

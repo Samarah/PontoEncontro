@@ -35,10 +35,11 @@
             <!--    <% out.print(n.getTitulo()); %> -->
             <br><%=n.getTitulo()%> - <%=n.getAutor()%>
             <div class="detalhe">
-            <img style="float: left; width: 135px; height: 200px;" src="imagem/<%=n.getImg()%>">
+            <img style="float: left; width: 135px; height: 200px; margin-right: 20px;" class="thumbnail" src="imagem/<%=n.getImg()%>">
+            <div class="noticia1">
             <p>Sinopse: <%=n.getSinopse()%></p>
-            
-             </div>
+            </div>
+            </div>
             <div class="noticia1">
             <p>Autor: <%=n.getAutor()%></p>
             </div>

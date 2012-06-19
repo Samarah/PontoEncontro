@@ -22,12 +22,13 @@
           <div class="ofsset2 span4">
               
               <div class="form-search">
-      <form  style="margin-left: 55px;"class="form-search">
-        <span class="form-search2">
-        <input type="text" style="height:30px;" class="input-medium search-query">
-        </span>
-        <button type="submit" class="btn btn-pink">Buscar</button>
-</form>
+    
+        <form  style="margin-left: 55px;" class="form-search" action="busca.jsp" method="POST">
+                <span class="form-search2">
+                <input type="text" name="texto_busca" style="height:30px;" class="input-medium search-query">
+                </span>
+                <button type="submit" class="btn btn-pink">Buscar</button>
+        </form>
 </div>
           </div>
 	  </div>

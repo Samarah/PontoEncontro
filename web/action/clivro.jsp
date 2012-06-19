@@ -6,7 +6,7 @@ String nomeEditora = request.getParameter("editora");
 String nomeEdicao = request.getParameter("edicao");
 String nomeAno = request.getParameter("ano");
 String nomeAutor = request.getParameter("autor");
-String nomePaginas = request.getParameter("paginas");
+String nomePaginas = request.getParameter("nPaginas");
 String nomeSinopse = request.getParameter("sinopse");
 
 

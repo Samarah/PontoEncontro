@@ -4,7 +4,6 @@
  */
 package DAO;
 
-import com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion.Static;
 import java.util.ArrayList;
 import modelo.livro;
 import util.ConjuntoResultados;
@@ -33,7 +32,7 @@ public class livroDAO {
             n.setEdicao(linha.getInt("edicao"));
             n.setGenero(linha.getString("genero"));
             n.setSinopse(linha.getString("sinopse"));
-            n.setAno(linha.getString("data"));
+            n.setAno(linha.getString("ano"));
             n.setId(linha.getString("id"));
             n.setnPaginas(linha.getInt("nPaginas"));
             
@@ -62,7 +61,7 @@ public class livroDAO {
             n.setEdicao(linha.getInt("edicao"));
             n.setGenero(linha.getString("genero"));
             n.setSinopse(linha.getString("sinopse"));
-            n.setAno(linha.getString("data"));
+            n.setAno(linha.getString("ano"));
             n.setId(linha.getString("id"));
             n.setnPaginas(linha.getInt("nPaginas"));
             //E retorna o objeto com os valores corretos
@@ -73,4 +72,35 @@ public class livroDAO {
         }
     }
     
+    
+        public static ArrayList<livro> busca(String texto){
+
+        ArrayList<livro> lista = new ArrayList<livro>();
+        MySQL bancoDados = new MySQL();
+        String sql = "select * from livros";
+                sql += " where ";
+                sql += "titulo like \"%"+texto+"%\" ";
+                    sql += "or sinopse like \"%"+texto+"%\" ";                    
+        ConjuntoResultados linhas = bancoDados.executaSelect(sql);
+        
+        while(linhas.next()){
+            livro n = new livro();
+            n.setId( linhas.getString("id") );
+            n.setTitulo( linhas.getString("titulo") );
+            n.setSinopse( linhas.getString("sinopse") );
+            n.setAutor(linhas.getString("autor"));
+            n.setEditora(linhas.getString("editora"));
+            n.setEdicao(linhas.getInt("edicao"));
+            n.setAno(linhas.getString("ano"));
+            n.setGenero(linhas.getString("genero"));
+            n.setnPaginas(linhas.getInt("nPaginas"));
+            n.setImg(linhas.getString("imagem"));
+            
+            
+            lista.add( n );
+        }
+
+        return lista;
+    }
+   
 }
