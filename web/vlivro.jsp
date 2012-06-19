@@ -57,9 +57,23 @@
             </div>
             <div class="noticia1">
             <p>Número de Páginas: <%=n.getnPaginas()%></p>
+            
                 
                 </div>
+           
                 </div>
+            
+            
+                 <div class="comentarios">
+                
+                <h3>Comentários</h3>
+                    
+                <jsp:include page="includes/comentario_livro.jsp" />
+                    <jsp:include page="includes/ccomentario.jsp" />
+                    
+            </div>
+            
+          
          	  <!-- Destaques regionais -->
            <jsp:include page="includes/rodape.jsp" />
           
