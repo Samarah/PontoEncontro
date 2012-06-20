@@ -195,6 +195,11 @@ margin-left: -20px;
 .detalhe{
     margin-top: 30px;
 }
+
+.idem {
+  padding-bottom: 17px;
+  margin: 18px 0;
+}
 </style>
 
 

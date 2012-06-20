@@ -17,7 +17,7 @@ public class livroDAO {
 
         MySQL bancoDados = new MySQL();
 
-        String sql = "select * from livros";
+        String sql = "select * from livros order by id desc limit 6";
 
         ConjuntoResultados linha = bancoDados.executaSelect(sql);
 
