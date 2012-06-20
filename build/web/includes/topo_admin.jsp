@@ -22,6 +22,7 @@
                                 <li><a href="cdownload.jsp">C.Download</a></li>
                                 <li><a href="cpessoas.jsp">C.Pessoas</a></li>
                                 <li><a href="list_livros.jsp">ListaLivros</a></li>
+                                <li><a href="list_usuarios.jsp">ListaUsuarios</a></li>
                             </ul>
                         </div>
 
