@@ -63,7 +63,9 @@
                 </div>
 
 
-            </div>      
+            </div> 
+            
+            <jsp:include page="includes/rodape.jsp" />
 
         </div>  
 

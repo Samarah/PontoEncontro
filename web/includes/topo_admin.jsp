@@ -24,6 +24,7 @@
                                 <li><a href="list_compras.jsp">ListaComprar</a></li>
                                 <li><a href="list_download.jsp">ListaDownload</a></li>
                                 <li><a href="list_livros.jsp">ListaLivros</a></li>
+                                <li><a href="list_usuarios.jsp">ListaUsuarios</a></li>
                             </ul>
                         </div>
 

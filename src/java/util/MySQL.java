@@ -79,7 +79,7 @@ public class MySQL {
             return cr;
         } catch (SQLException e){
             System.out.println("Erro no SELECT"+e);
-            System.exit(0);
+           // System.exit(0);
             return null;
         }
     }       
