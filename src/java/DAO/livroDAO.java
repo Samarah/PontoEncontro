@@ -11,49 +11,13 @@ import util.MySQL;
 
 public class livroDAO {
 
-
-    public static ArrayList<livro> listas(String letra) {
-
-        ArrayList<livro> listas = new ArrayList<livro>();
-
-        MySQL bancoDados = new MySQL();
-
-        String sql = "select * from livros where Titulo like \""+letra+"%\" ";
-
-
-        ConjuntoResultados linha = bancoDados.executaSelect(sql);
-
-
-        while (linha.next()) {
-
-            livro n = new livro();
-           n.setTitulo(linha.getString("titulo"));
-            n.setImg(linha.getString("imagem"));
-            n.setAutor(linha.getString("autor"));
-            n.setEditora(linha.getString("editora"));
-            n.setEdicao(linha.getInt("edicao"));
-            n.setGenero(linha.getString("genero"));
-            n.setSinopse(linha.getString("sinopse"));
-            n.setAno(linha.getString("ano"));
-            n.setId(linha.getString("id"));
-            n.setnPaginas(linha.getInt("nPaginas"));
-            
-            
-            listas.add(n);
-        }
-        return listas;
-
-
-    }
-    
     public static ArrayList<livro> lista() {
 
         ArrayList<livro> lista = new ArrayList<livro>();
 
         MySQL bancoDados = new MySQL();
 
-        String sql = "select * from livros" ; /*String sql = "select * from livros order by id desc limit 6";*/
-
+        String sql = "select * from livros order by id desc limit 6";
 
         ConjuntoResultados linha = bancoDados.executaSelect(sql);
 
@@ -76,20 +40,9 @@ public class livroDAO {
             lista.add(n);
         }
         return lista;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
 
 
- 
-    
+    }
     
     public static livro pegaLivroPeloId(String id){
         MySQL bancoDados = new MySQL();

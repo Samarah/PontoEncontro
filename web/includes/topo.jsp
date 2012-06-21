@@ -14,7 +14,7 @@
                                 <a href="index.jsp" class="btn btn-pink">Inicio</a>
                                 <a href="biblioteca.jsp" class="btn btn-pink">Biblioteca</a>
 				<a href="comprar.jsp" class="btn btn-pink">Comprar</a>
-				<a href="Download.jsp" class="btn btn-pink">Download</a>
+				<a href="download.jsp" class="btn btn-pink">Download</a>
 				<a href="contato.jsp" class="btn btn-pink">Contato</a>
 			</div> 
 		</div>
