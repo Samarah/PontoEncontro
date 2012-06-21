@@ -8,6 +8,58 @@
 <!-- Le styles -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <style>
+.download {
+margin-bottom: 20px;
+padding-bottom: px;
+margin-top: 15px;
+float: left;
+width: 245px;
+height: 80px;
+margin-right: 50px;
+
+}
+
+.bloco-comprar{
+padding-top: 20px;
+float: left;
+width: 606px;
+margin-left: 300px;
+margin-top: 50px;
+}
+
+.bloco-download{
+padding-top: 0px;
+float: left;
+width: 950px;
+margin-left: 0px;
+margin-top: 50px;
+}
+
+.compra {
+margin-bottom: 20px;
+padding-bottom: 20px;
+margin-top: 15px;
+float: left;
+width: 200px;
+height: 120px;
+
+}
+
+.fundo
+{
+background-image:url("imagem/fundo.png");
+height:630px;
+width: 900px;
+margin-left: 30px;
+}
+
+.fundo2
+{
+background-image:url("imagem/fundo2.jpg");
+height:630px;
+width: 900px;
+margin-left: 30px;
+}
 
 .bloco-fundo {
 margin-bottom: 20px;
@@ -161,12 +213,12 @@ rgba(0, 0, 0, 0.05);
 outline: 0;
 }
 .balao{
-    margin-left: 100px;
+margin-left: 100px;
 }
 
 .balao{
-    margin-left: 130px;
-    
+margin-left: 130px;
+
 }
 
 .help-block {
@@ -179,10 +231,10 @@ margin-bottom: -13px;
 }
 
 .cabecario{
-    font-family:monospace , sans-serif;
-    font-size: 20px;
-    text-align: center;
-    
+font-family:monospace , sans-serif;
+font-size: 20px;
+text-align: center;
+
 }
 
 .cabecario p{
@@ -193,12 +245,12 @@ margin-left: -20px;
 }
 
 .detalhe{
-    margin-top: 30px;
+margin-top: 30px;
 }
 
 .idem {
-  padding-bottom: 17px;
-  margin: 18px 0;
+padding-bottom: 17px;
+margin: 18px 0;
 }
 </style>
 

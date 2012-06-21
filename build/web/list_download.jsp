@@ -1,34 +1,37 @@
+
+<%@page import="modelo.download"%>
+<%@page import="DAO.downloadDAO"%>
 <%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
-<html lang="en">
-  
-  <jsp:include page="includes/head.jsp" />
+<html>
+
+    <jsp:include page="includes/head.jsp" />
+    
 
   <body>
 
     <div class="container">
+	
+	
+	 <!-- bloco header -->
 
-        <jsp:include page="includes/bloco_topo.jsp" />
-
-        <div class="row">
-
-            <jsp:include page="includes/bloco_menu.jsp" />
+         <jsp:include page="includes/topo.jsp"/>
 
              <div class="span9">
-                 <h2>Lista de Novidades</h2>
+                 <h2>Lista de download</h2>
 
                  <table class="table">
                  <%
                     //Código java
-                    ArrayList<download> lista = downloadDAO.lista();
-                    for( download n : lista){
+                    ArrayList<download> listas = downloadDAO.listas();
+                    for( download n : listas){
                         out.print("<tr>");
                             out.print("<td>" + n.getTitulo() + "</td>");
 
                             out.print("<td>" + n.getLink() + "</p>" );
 
                             out.print("<td>");
-                                String linkExcluir = "del_download.jsp?titulo="+n.getTitulo();
+                                String linkExcluir = "del_download.jsp?id="+n.getId();
                                 out.println("<a href=\""+linkExcluir+"\">excluir</a>" );
                             out.print("</td>");
                         out.print("</tr>");
@@ -39,7 +42,17 @@
         </div>
 
     </div>
+                 
+	  <!-- Destaques regionais -->
+           <jsp:include page="includes/rodape.jsp" />
+          
+       </div>
+
+
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <jsp:include page ="includes/javaScript.jsp" />
     
-    <jsp:include page="includes/javascript.jsp" />
   </body>
 </html>

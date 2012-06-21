@@ -19,7 +19,7 @@ public class MySQL {
     Statement statement;    
     String user = "root";
     String pass = "vertrigo";
-    String database = "PE";
+    String database = "cadastro";
     String host = "localhost";
    
     public MySQL()
